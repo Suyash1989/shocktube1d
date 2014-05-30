@@ -1,0 +1,55 @@
+****************************************************************************************************************
+This Program solves 1-D shock tube problem numerically. It is based on Finite Volume Method. 
+There are following options for the flux approximation:
+1. Lax-Friedrichs
+2. Roe Averaged flux
+3. Harten, Lax, van Leer (HLL)
+4. HLLC proposed by Toro, Spruce and Spears, 1994
+****************************************************************************************************************
+
+*Instructions to run the program:
+1. Makefile is provided to compile the code.
+2. On compiling and executable "Main" is created.
+3. Specify input parameters in the "input" file. File format is given below.
+4. Keywords for each type of flux approximation are given in brackets.
+5. Initial conditions to be specified on both the sides of diaphragm: Density, Velocity and Total energy
+6. The program generates "*.dat" files for each of the flow variables(e.g. velocity, pressure, etc.)
+   These data files contains time varying data arranged in columns, each column representing a time level
+   except first column which gives x-coordinate.
+7. There is a sample gnuplot file 'plot.gp' provided to generate plots.
+
+**Input file format---------------------------------------------------------------------------------------------
+
+# Title of the simulation
+title : Test_1
+
+# Working directory
+wdir : .
+
+# Number of control volumes
+N : 500
+
+# End time of simulation
+End_time : 0.2
+
+# Specify CFL number
+CFL : 0.95
+
+# Flux approximation (LF, ROE, HLL, HLLC)
+FA : LF
+
+# Diaphragm position (x-dir)
+DP_x : 0.5
+
+# Initial Conditions on the left of diaphragm
+rho_L : 1.0
+u_L : 0.0
+E_L : 2.5
+
+# Initial Conditions on the right of diaphragm
+rho_R : 0.125
+u_R : 0.0
+E_R : 0.25
+----------------------------------------------------------------------------------------------------------------
+
+

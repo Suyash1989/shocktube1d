@@ -1,0 +1,30 @@
+# Title of the simulation
+title : Test_1
+
+# Working directory
+wdir : .
+
+# Number of control volumes
+N : 500
+
+# End time of simulation
+End_time : 0.2
+
+# Specify CFL number
+CFL : 0.95
+
+# Flux approximation (LF, ROE, HLL, HLLC)
+FA : HLLC
+
+# Diaphragm position (x-dir)
+DP_x : 0.5
+
+# Initial Conditions on the left of diaphragm
+rho_L : 1.0
+u_L : 0.0
+E_L : 2.5
+
+# Initial Conditions on the right of diaphragm
+rho_R : 0.125
+u_R : 0.0
+E_R : 0.25
