@@ -1,4 +1,3 @@
-
 #include "Input.H"
 #include "Functions.H"
 
@@ -74,6 +73,7 @@ int main(int argc, char* argv[]){
 	FreeDynamicArray(f);
 	FreeDynamicArray(rho);
 	FreeDynamicArray(E);
+  FreeDynamicArray(e);
 	FreeDynamicArray(p);
 	FreeDynamicArray(u);
 	FreeDynamicArray(Mach);
