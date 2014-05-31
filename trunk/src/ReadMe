@@ -9,12 +9,12 @@ There are following options for the flux approximation:
 
 *Instructions to run the program:
 1. Makefile is provided to compile the code.
-2. On compiling and executable "Main" is created.
+2. On compiling, an executable "Main" is created.
 3. Specify input parameters in the "input" file. File format is given below.
 4. Keywords for each type of flux approximation are given in brackets.
 5. Initial conditions to be specified on both the sides of diaphragm: Density, Velocity and Total energy
 6. The program generates "*.dat" files for each of the flow variables(e.g. velocity, pressure, etc.)
-   These data files contains time varying data arranged in columns, each column representing a time level
+   These data files contain time varying data arranged in columns, each column representing a time level
    except first column which gives x-coordinate.
 7. There is a sample gnuplot file 'plot.gp' provided to generate plots.
 
